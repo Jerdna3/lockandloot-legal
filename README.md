@@ -36,7 +36,8 @@ https://jerdna3.github.io/lockandloot-legal/privacy-policy/
 
 ## Wann die Erklärung angepasst werden muss
 
-Die Erklärung beschreibt den Stand der App (v0.11.x): Firebase Auth (anonym + optional Google-Login),
+Die Erklärung beschreibt den Stand der App (v0.11.x): Firebase Auth mit **Pflicht-Google-Login**
+(anonyme Konten sind abgeschafft, Commit `bd23c40`),
 Cloud Firestore (europe-west3), Chat, Usage-Access nur für Bildschirm-Ereignisse, keine Werbung/Analytics.
 Anpassen, wenn sich daran etwas ändert — insbesondere bei:
 

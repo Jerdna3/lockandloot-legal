@@ -30,8 +30,8 @@
         </p>
         <p>
           <strong>Summary:</strong> The App contains no ads, no tracking services, and no analytics SDKs.
-          For multiplayer, your game state is stored on Google Firebase servers in the EU (Frankfurt).
-          Accounts are anonymous by default, and the App never reads which apps you use.
+          Playing requires signing in with your Google account; your game state is stored on Google
+          Firebase servers in the EU (Frankfurt). The App never reads which apps you use.
         </p>
       </section>
 
@@ -61,13 +61,16 @@
         <p><strong>a) Account (Firebase Authentication)</strong></p>
         <ul>
           <li>
-            On first launch, an <strong>anonymous account</strong> with a random user ID is created automatically.
-            No email address or name is required.
+            Playing requires <strong>signing in with your Google account</strong>. Your game state is tied to
+            that account, which lets it survive device changes and reinstalls.
           </li>
           <li>
-            Optionally, you can <strong>link your Google account</strong> (e.g. for switching devices or account
-            recovery). In that case, your Google account identifier and email address are stored with
-            Firebase Authentication. Without linking, your account stays anonymous.
+            In doing so, an identifier for your Google account and your <strong>email address</strong> are stored
+            with Firebase Authentication. Your email address is <strong>not</strong> visible to other players —
+            they only see the player name you chose.
+          </li>
+          <li>
+            We receive no further access to your Google account (no contacts, no emails, no password).
           </li>
         </ul>
 

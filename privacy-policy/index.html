@@ -30,8 +30,8 @@
         </p>
         <p>
           <strong>Kurzfassung:</strong> Die App kommt ohne Werbung, ohne Tracking-Dienste und ohne Analyse-SDKs aus.
-          Für den Mehrspieler-Betrieb wird dein Spielstand auf Servern von Google Firebase in der EU (Frankfurt) gespeichert.
-          Ein Konto ist standardmäßig anonym; welche Apps du benutzt, wird nicht ausgelesen.
+          Zum Spielen meldest du dich mit deinem Google-Konto an; dein Spielstand wird auf Servern von
+          Google Firebase in der EU (Frankfurt) gespeichert. Welche Apps du benutzt, wird nicht ausgelesen.
         </p>
       </section>
 
@@ -60,13 +60,17 @@
         <p><strong>a) Konto (Firebase Authentication)</strong></p>
         <ul>
           <li>
-            Beim ersten Start wird automatisch ein <strong>anonymes Konto</strong> mit einer zufälligen Nutzer-ID erstellt.
-            Dafür sind keine E-Mail-Adresse und kein Name nötig.
+            Zum Spielen ist eine <strong>Anmeldung mit deinem Google-Konto erforderlich</strong>. Dein Spielstand
+            ist an dieses Konto gebunden und übersteht dadurch Gerätewechsel und Neuinstallationen.
           </li>
           <li>
-            Optional kannst du dein Konto mit deinem <strong>Google-Konto verknüpfen</strong> (z.&nbsp;B. für Gerätewechsel
-            oder Konto-Wiederherstellung). Dabei werden deine Google-Konto-Kennung und deine E-Mail-Adresse bei
-            Firebase Authentication gespeichert. Ohne Verknüpfung bleibt dein Konto anonym.
+            Dabei werden eine Kennung deines Google-Kontos und deine <strong>E-Mail-Adresse</strong> bei
+            Firebase Authentication gespeichert. Deine E-Mail-Adresse ist für andere Spieler
+            <strong>nicht</strong> sichtbar — sie sehen nur deinen frei gewählten Spielernamen.
+          </li>
+          <li>
+            Wir erhalten von Google keinen Zugriff auf dein Google-Konto darüber hinaus (z.&nbsp;B. keine
+            Kontakte, keine E-Mails, kein Passwort).
           </li>
         </ul>
 
