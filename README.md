@@ -6,7 +6,9 @@ Statische Rechtstexte für die Android-App **Lock&Loot** (`de.lockandloot.app`),
 
 - [`privacy-policy/index.html`](privacy-policy/index.html) — Datenschutzerklärung (Deutsch, Hauptseite)
 - [`privacy-policy/en.html`](privacy-policy/en.html) — Privacy Policy (English)
-- [`privacy-policy/style.css`](privacy-policy/style.css) — Styling
+- [`privacy-policy/style.css`](privacy-policy/style.css) — Styling (wird von beiden Bereichen genutzt)
+- [`account-deletion/index.html`](account-deletion/index.html) — Konto und Daten löschen (Deutsch)
+- [`account-deletion/en.html`](account-deletion/en.html) — Delete Account and Data (English)
 
 ## Veröffentlichen mit GitHub Pages
 
@@ -15,17 +17,26 @@ Statische Rechtstexte für die Android-App **Lock&Loot** (`de.lockandloot.app`),
 3. Unter **Build and deployment**:
    - **Source**: „Deploy from a branch“
    - **Branch**: `main`, Ordner **`/ (root)`**
-4. Nach dem Deploy ist die Seite erreichbar unter:
+4. Nach dem Deploy sind die Seiten erreichbar unter:
 
-   - Deutsch: `https://jerdna3.github.io/lockandloot-legal/privacy-policy/`
-   - Englisch: `https://jerdna3.github.io/lockandloot-legal/privacy-policy/en.html`
+   - Datenschutz DE: `https://jerdna3.github.io/lockandloot-legal/privacy-policy/`
+   - Datenschutz EN: `https://jerdna3.github.io/lockandloot-legal/privacy-policy/en.html`
+   - Kontolöschung DE: `https://jerdna3.github.io/lockandloot-legal/account-deletion/`
+   - Kontolöschung EN: `https://jerdna3.github.io/lockandloot-legal/account-deletion/en.html`
 
-## URL in der Google Play Console eintragen
+## URLs in der Google Play Console eintragen
 
-In der Play Console unter **App-Inhalte → Datenschutzerklärung** diese URL eintragen:
+**App-Inhalte → Datenschutzerklärung:**
 
 ```
 https://jerdna3.github.io/lockandloot-legal/privacy-policy/
+```
+
+**App-Inhalte → Datenlöschung** (Pflicht, weil die App Kontoerstellung anbietet) —
+„Nutzer können die Löschung ihres Kontos beantragen“ + diese URL:
+
+```
+https://jerdna3.github.io/lockandloot-legal/account-deletion/
 ```
 
 ## Bei Änderungen
@@ -44,3 +55,12 @@ Anpassen, wenn sich daran etwas ändert — insbesondere bei:
 - Einführung von **Google Play Billing** (Abo/Käufe) → eigener Abschnitt nötig
 - Einbau von Analytics/Crashlytics oder Werbung
 - Wechsel der Server-Region oder des Backends
+
+Die Aufbewahrungsfristen auf beiden Seiten stammen aus dem Server-Code und müssen mitgezogen werden,
+wenn sich dort etwas ändert:
+
+- Kampfberichte: 30 Tage (`AttackSubmitHandler.BATTLE_EXPIRY_SEC`)
+- Transfereinträge: 31 Tage (`TransferHandler.EXPIRY_SEC`)
+
+Die Lösch-Seite beschreibt außerdem den In-App-Weg (Profil → „Account löschen“, `PlayerDeleteHandler`)
+inklusive der Clan-Sperre — auch das anpassen, wenn sich der Ablauf ändert.
