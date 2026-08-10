@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>Lock&amp;Loot – Datenschutzerklärung</title>
+  <meta name="description" content="Datenschutzerklärung für Lock&Loot (Android-Spiel)." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Datenschutzerklärung</h1>
+      <p class="subtitle">Lock&amp;Loot (Android-App)</p>
+      <p class="lang-switch">🇬🇧 <a href="./en.html">Read this policy in English</a></p>
+      <div class="meta">
+        <div><strong>Gültig ab:</strong> 10. August 2026</div>
+        <div><strong>Zuletzt aktualisiert:</strong> 10. August 2026</div>
+      </div>
+    </header>
+
+    <main>
+      <section id="einleitung">
+        <h2>1. Einleitung</h2>
+        <p>
+          Diese Datenschutzerklärung erklärt, wie Lock&amp;Loot („die App“) mit deinen Daten umgeht.
+          Lock&amp;Loot ist ein Mehrspieler-Aufbauspiel, bei dem dein Fortschritt dadurch entsteht,
+          dass du dein Handy <em>nicht</em> benutzt: Während der Bildschirm aus ist, produziert deine Basis Rohstoffe.
+        </p>
+        <p>
+          <strong>Kurzfassung:</strong> Die App kommt ohne Werbung, ohne Tracking-Dienste und ohne Analyse-SDKs aus.
+          Für den Mehrspieler-Betrieb wird dein Spielstand auf Servern von Google Firebase in der EU (Frankfurt) gespeichert.
+          Ein Konto ist standardmäßig anonym; welche Apps du benutzt, wird nicht ausgelesen.
+        </p>
+      </section>
+
+      <section id="verantwortlicher">
+        <h2>2. Verantwortlicher</h2>
+        <p>
+          Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist der Entwickler und Herausgeber von Lock&amp;Loot.
+        </p>
+        <p>
+          <strong>Kontakt:</strong> <a href="mailto:pascalnuescheler@gmail.com">pascalnuescheler@gmail.com</a>
+        </p>
+      </section>
+
+      <section id="app-beschreibung">
+        <h2>3. Was die App macht</h2>
+        <p>
+          Lock&amp;Loot misst, wie lange der Bildschirm deines Geräts ausgeschaltet war, und wandelt diese Zeit in
+          Spielfortschritt um (Rohstoffe für deine Basis). Du kannst andere Spieler angreifen, mit ihnen handeln und
+          im Spiel-Chat schreiben. Die Spiellogik wird zum Schutz vor Manipulation auf dem Server berechnet.
+        </p>
+      </section>
+
+      <section id="daten">
+        <h2>4. Welche Daten verarbeitet werden</h2>
+
+        <p><strong>a) Konto (Firebase Authentication)</strong></p>
+        <ul>
+          <li>
+            Beim ersten Start wird automatisch ein <strong>anonymes Konto</strong> mit einer zufälligen Nutzer-ID erstellt.
+            Dafür sind keine E-Mail-Adresse und kein Name nötig.
+          </li>
+          <li>
+            Optional kannst du dein Konto mit deinem <strong>Google-Konto verknüpfen</strong> (z.&nbsp;B. für Gerätewechsel
+            oder Konto-Wiederherstellung). Dabei werden deine Google-Konto-Kennung und deine E-Mail-Adresse bei
+            Firebase Authentication gespeichert. Ohne Verknüpfung bleibt dein Konto anonym.
+          </li>
+        </ul>
+
+        <p><strong>b) Spieldaten (Cloud Firestore)</strong></p>
+        <ul>
+          <li>Dein frei wählbarer <strong>Spielername</strong> (er muss nicht dein echter Name sein und ist für andere Spieler sichtbar).</li>
+          <li>Dein <strong>Spielstand</strong>: Basis, Gebäude, Rohstoffe, Truppen, Forschung.</li>
+          <li><strong>Kampf- und Handelsdaten</strong>: Angriffe, Kampfergebnisse, Transfers zwischen Spielern. Kampfdaten werden nach kurzer Zeit automatisch gelöscht.</li>
+        </ul>
+
+        <p><strong>c) Chat-Nachrichten</strong></p>
+        <ul>
+          <li>
+            Nachrichten, die du im Spiel-Chat schreibst, werden zusammen mit deinem Spielernamen auf dem Server
+            gespeichert und sind für andere Spieler sichtbar. Bitte teile im Chat keine persönlichen Daten
+            (z.&nbsp;B. Adresse oder Telefonnummer).
+          </li>
+        </ul>
+
+        <p><strong>d) Bildschirmstatus (lokal auf deinem Gerät)</strong></p>
+        <ul>
+          <li>
+            Über die Android-Berechtigung „Nutzungszugriff“ liest die App ausschließlich
+            <strong>Bildschirm-Ereignisse</strong> aus: Bildschirm an/aus, Gerät gesperrt/entsperrt sowie
+            Geräte-Neustarts, jeweils mit Zeitstempel.
+          </li>
+          <li>
+            Die App liest <strong>nicht</strong> aus, welche Apps du benutzt. Die rohen Bildschirm-Ereignisse
+            bleiben auf deinem Gerät; an den Server übertragen wird nur der daraus berechnete Spielfortschritt
+            (z.&nbsp;B. produzierte Rohstoffe).
+          </li>
+        </ul>
+
+        <p><strong>e) Technische Daten</strong></p>
+        <ul>
+          <li>
+            Bei der Verbindung zu den Firebase-Servern verarbeitet Google technisch notwendige Daten wie deine
+            IP-Adresse, um die Verbindung herzustellen und abzusichern.
+          </li>
+        </ul>
+
+        <p>
+          <strong>Rechtsgrundlage:</strong> Die Verarbeitung erfolgt zur Bereitstellung des Spiels
+          (Art. 6 Abs. 1 lit. b DSGVO) sowie auf Grundlage unseres berechtigten Interesses an einem sicheren,
+          manipulationsfreien Spielbetrieb (Art. 6 Abs. 1 lit. f DSGVO).
+        </p>
+      </section>
+
+      <section id="nutzungszugriff">
+        <h2>5. Berechtigung „Nutzungszugriff“ (Usage Access)</h2>
+        <p>
+          Lock&amp;Loot benötigt die Android-Berechtigung <strong>Nutzungszugriff</strong>, um festzustellen,
+          wann der Bildschirm aus- und wieder eingeschaltet wurde. Das ist die Kernmechanik des Spiels:
+          Nur so kann die App belohnen, dass du dein Handy weggelegt hast.
+        </p>
+        <ul>
+          <li>Gelesen werden nur Bildschirm-, Sperr- und Neustart-Ereignisse mit Zeitstempel.</li>
+          <li>Es wird <strong>nicht</strong> erfasst, welche Apps du öffnest oder wie du dein Gerät benutzt.</li>
+          <li>Die Daten werden nicht für Werbung genutzt, nicht verkauft und nicht an Dritte weitergegeben.</li>
+        </ul>
+        <p>
+          Du kannst die Berechtigung jederzeit in den Android-Systemeinstellungen entziehen. Das Spiel kann dann
+          allerdings keine Bildschirm-aus-Zeit mehr erfassen, wodurch die Kernmechanik nicht mehr funktioniert.
+        </p>
+      </section>
+
+      <section id="speicherung">
+        <h2>6. Speicherort und Speicherdauer</h2>
+        <p>
+          Der Spielstand wird bei <strong>Google Firebase</strong> (Cloud Firestore und Firebase Authentication)
+          gespeichert. Serverstandort ist <strong>Frankfurt am Main, Deutschland (Region europe-west3)</strong>,
+          also innerhalb der EU. Google agiert dabei als Auftragsverarbeiter. Weitere Informationen:
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a> und
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google-Datenschutzerklärung</a>.
+        </p>
+        <ul>
+          <li><strong>Spielstand und Konto:</strong> gespeichert, solange dein Konto besteht.</li>
+          <li><strong>Kampfdaten:</strong> werden nach kurzer Zeit automatisch gelöscht.</li>
+          <li>
+            <strong>Lokale Daten</strong> (Einstellungen, Bildschirm-Ereignisse, zwischengespeicherter Spielstand)
+            liegen auf deinem Gerät und lassen sich jederzeit über die Android-Einstellungen
+            („Speicher löschen“) oder durch Deinstallation der App entfernen.
+          </li>
+        </ul>
+      </section>
+
+      <section id="keine-werbung">
+        <h2>7. Keine Werbung, kein Tracking, kein Datenverkauf</h2>
+        <ul>
+          <li>Die App enthält <strong>keine Werbe-SDKs</strong> und zeigt keine Werbung.</li>
+          <li>Es sind <strong>keine Analyse- oder Tracking-Dienste</strong> eingebaut (kein Google Analytics, kein Crashlytics o.&nbsp;Ä.).</li>
+          <li>Deine Daten werden <strong>nicht verkauft</strong> und nicht zu Werbezwecken weitergegeben.</li>
+          <li>Einzige Empfänger der Daten sind die oben genannten Google-Firebase-Dienste als technischer Dienstleister.</li>
+        </ul>
+      </section>
+
+      <section id="berechtigungen">
+        <h2>8. App-Berechtigungen im Überblick</h2>
+        <ul>
+          <li><strong>Internet (INTERNET):</strong> Verbindung zu den Spielservern (Firebase) für Konto, Spielstand, Kämpfe und Chat.</li>
+          <li><strong>Nutzungszugriff (PACKAGE_USAGE_STATS):</strong> Erkennen von Bildschirm-an/aus-Ereignissen für die Spielmechanik (siehe Abschnitt 5).</li>
+        </ul>
+      </section>
+
+      <section id="sicherheit">
+        <h2>9. Datensicherheit</h2>
+        <p>
+          Die Verbindung zu den Servern erfolgt verschlüsselt (TLS). Der Zugriff auf die Spieldaten ist durch
+          serverseitige Sicherheitsregeln geschützt; spielentscheidende Berechnungen finden auf dem Server statt.
+          Absolute Sicherheit kann keine Software garantieren, wir beschränken die Datenverarbeitung jedoch auf
+          das für das Spiel Notwendige.
+        </p>
+      </section>
+
+      <section id="kinder">
+        <h2>10. Kinder</h2>
+        <p>
+          Lock&amp;Loot richtet sich nicht an Kinder unter 13 Jahren (bzw. unter dem in deinem Land geltenden
+          Mindestalter). Wir erheben wissentlich keine personenbezogenen Daten von Kindern. Wenn du als
+          Erziehungsberechtigte:r glaubst, dass uns ein Kind personenbezogene Daten übermittelt hat,
+          kontaktiere uns bitte über die unten angegebene Adresse.
+        </p>
+      </section>
+
+      <section id="rechte">
+        <h2>11. Deine Rechte (DSGVO)</h2>
+        <p>
+          Du hast nach der DSGVO insbesondere das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der
+          Verarbeitung, Datenübertragbarkeit und Widerspruch. Außerdem hast du das Recht, dich bei einer
+          Datenschutz-Aufsichtsbehörde zu beschweren.
+        </p>
+        <ul>
+          <li>
+            <strong>Konto und Spielstand löschen:</strong> Schreib uns eine E-Mail an
+            <a href="mailto:pascalnuescheler@gmail.com">pascalnuescheler@gmail.com</a> — wir löschen dein Konto
+            samt Spielstand von den Servern.
+          </li>
+          <li>
+            <strong>Lokale Daten löschen:</strong> App-Speicher in den Android-Einstellungen löschen oder die App deinstallieren.
+          </li>
+        </ul>
+      </section>
+
+      <section id="aenderungen">
+        <h2>12. Änderungen dieser Erklärung</h2>
+        <p>
+          Wir können diese Datenschutzerklärung anpassen, wenn sich die App, die Rechtslage oder unsere Abläufe
+          ändern. Maßgeblich ist jeweils das oben angegebene Datum der letzten Aktualisierung.
+        </p>
+      </section>
+
+      <section id="kontakt">
+        <h2>13. Kontakt</h2>
+        <p>
+          Bei Fragen zu dieser Datenschutzerklärung oder zum Datenschutz in Lock&amp;Loot:
+        </p>
+        <p>
+          E-Mail: <a href="mailto:pascalnuescheler@gmail.com">pascalnuescheler@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        © <span id="year">2026</span> Lock&amp;Loot. Alle Rechte vorbehalten.
+      </div>
+      <script>
+        // Fußzeilen-Jahr aktuell halten, ohne die Datumsangaben der Erklärung zu ändern.
+        (function () {
+          var el = document.getElementById('year');
+          if (el) el.textContent = String(new Date().getFullYear());
+        })();
+      </script>
+    </footer>
+  </div>
+</body>
+</html>

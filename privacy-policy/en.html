@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <title>Lock&amp;Loot – Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Lock&Loot (Android game)." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Lock&amp;Loot (Android App)</p>
+      <p class="lang-switch">🇩🇪 <a href="./index.html">Diese Erklärung auf Deutsch lesen</a></p>
+      <div class="meta">
+        <div><strong>Effective date:</strong> August 10, 2026</div>
+        <div><strong>Last updated:</strong> August 10, 2026</div>
+      </div>
+    </header>
+
+    <main>
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>
+          This Privacy Policy explains how Lock&amp;Loot (“the App”) handles your data.
+          Lock&amp;Loot is a multiplayer base-building game where progress comes from <em>not</em> using your phone:
+          while your screen is off, your base produces resources.
+        </p>
+        <p>
+          <strong>Summary:</strong> The App contains no ads, no tracking services, and no analytics SDKs.
+          For multiplayer, your game state is stored on Google Firebase servers in the EU (Frankfurt).
+          Accounts are anonymous by default, and the App never reads which apps you use.
+        </p>
+      </section>
+
+      <section id="data-controller">
+        <h2>2. Data Controller</h2>
+        <p>
+          For the purposes of the General Data Protection Regulation (GDPR), the data controller is the
+          developer and publisher of Lock&amp;Loot.
+        </p>
+        <p>
+          <strong>Contact:</strong> <a href="mailto:pascalnuescheler@gmail.com">pascalnuescheler@gmail.com</a>
+        </p>
+      </section>
+
+      <section id="app-description">
+        <h2>3. What the App Does</h2>
+        <p>
+          Lock&amp;Loot measures how long your device's screen has been off and converts that time into game
+          progress (resources for your base). You can attack other players, trade with them, and write in the
+          in-game chat. Game logic is computed on the server to prevent cheating.
+        </p>
+      </section>
+
+      <section id="data-collected">
+        <h2>4. Data We Process</h2>
+
+        <p><strong>a) Account (Firebase Authentication)</strong></p>
+        <ul>
+          <li>
+            On first launch, an <strong>anonymous account</strong> with a random user ID is created automatically.
+            No email address or name is required.
+          </li>
+          <li>
+            Optionally, you can <strong>link your Google account</strong> (e.g. for switching devices or account
+            recovery). In that case, your Google account identifier and email address are stored with
+            Firebase Authentication. Without linking, your account stays anonymous.
+          </li>
+        </ul>
+
+        <p><strong>b) Game data (Cloud Firestore)</strong></p>
+        <ul>
+          <li>Your freely chosen <strong>player name</strong> (it does not have to be your real name and is visible to other players).</li>
+          <li>Your <strong>game state</strong>: base, buildings, resources, troops, research.</li>
+          <li><strong>Battle and trade data</strong>: attacks, battle results, transfers between players. Battle data is deleted automatically after a short time.</li>
+        </ul>
+
+        <p><strong>c) Chat messages</strong></p>
+        <ul>
+          <li>
+            Messages you write in the in-game chat are stored on the server together with your player name and are
+            visible to other players. Please do not share personal information (such as your address or phone number) in chat.
+          </li>
+        </ul>
+
+        <p><strong>d) Screen state (local, on your device)</strong></p>
+        <ul>
+          <li>
+            Through the Android <strong>Usage Access</strong> permission, the App reads only
+            <strong>screen events</strong>: screen on/off, device locked/unlocked, and device restarts,
+            each with a timestamp.
+          </li>
+          <li>
+            The App does <strong>not</strong> read which apps you use. Raw screen events stay on your device;
+            only the game progress computed from them (e.g. produced resources) is sent to the server.
+          </li>
+        </ul>
+
+        <p><strong>e) Technical data</strong></p>
+        <ul>
+          <li>
+            When connecting to Firebase servers, Google processes technically necessary data such as your
+            IP address to establish and secure the connection.
+          </li>
+        </ul>
+
+        <p>
+          <strong>Legal basis:</strong> Processing is carried out to provide the game
+          (Art. 6(1)(b) GDPR) and based on our legitimate interest in secure, cheat-free gameplay
+          (Art. 6(1)(f) GDPR).
+        </p>
+      </section>
+
+      <section id="usage-access">
+        <h2>5. Usage Access Permission</h2>
+        <p>
+          Lock&amp;Loot requires the Android <strong>Usage Access</strong> permission to detect when the screen
+          was turned off and on again. This is the core mechanic of the game: it is the only way the App can
+          reward you for putting your phone away.
+        </p>
+        <ul>
+          <li>Only screen, lock, and restart events with timestamps are read.</li>
+          <li>The App does <strong>not</strong> record which apps you open or how you use your device.</li>
+          <li>This data is not used for advertising, not sold, and not shared with third parties.</li>
+        </ul>
+        <p>
+          You can revoke the permission at any time in Android system settings. The game will then no longer be
+          able to measure screen-off time, so the core mechanic will stop working.
+        </p>
+      </section>
+
+      <section id="storage">
+        <h2>6. Storage Location and Retention</h2>
+        <p>
+          Your game state is stored with <strong>Google Firebase</strong> (Cloud Firestore and Firebase
+          Authentication). The server location is <strong>Frankfurt, Germany (region europe-west3)</strong>,
+          within the EU. Google acts as a data processor. More information:
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a> and
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+        </p>
+        <ul>
+          <li><strong>Game state and account:</strong> stored for as long as your account exists.</li>
+          <li><strong>Battle data:</strong> deleted automatically after a short time.</li>
+          <li>
+            <strong>Local data</strong> (settings, screen events, cached game state) lives on your device and can
+            be removed at any time via Android settings (“Clear storage”) or by uninstalling the App.
+          </li>
+        </ul>
+      </section>
+
+      <section id="no-ads">
+        <h2>7. No Ads, No Tracking, No Data Sales</h2>
+        <ul>
+          <li>The App contains <strong>no advertising SDKs</strong> and shows no ads.</li>
+          <li>There are <strong>no analytics or tracking services</strong> built in (no Google Analytics, no Crashlytics, or similar).</li>
+          <li>Your data is <strong>never sold</strong> and never shared for advertising purposes.</li>
+          <li>The only recipients of your data are the Google Firebase services listed above, acting as a technical service provider.</li>
+        </ul>
+      </section>
+
+      <section id="permissions">
+        <h2>8. App Permissions at a Glance</h2>
+        <ul>
+          <li><strong>Internet (INTERNET):</strong> connection to the game servers (Firebase) for account, game state, battles, and chat.</li>
+          <li><strong>Usage Access (PACKAGE_USAGE_STATS):</strong> detecting screen on/off events for the game mechanic (see Section 5).</li>
+        </ul>
+      </section>
+
+      <section id="security">
+        <h2>9. Data Security</h2>
+        <p>
+          Connections to the servers are encrypted (TLS). Access to game data is protected by server-side security
+          rules, and game-critical calculations happen on the server. No software can guarantee absolute security,
+          but we limit data processing to what the game actually needs.
+        </p>
+      </section>
+
+      <section id="children">
+        <h2>10. Children's Privacy</h2>
+        <p>
+          Lock&amp;Loot is not intended for children under the age of 13 (or the equivalent minimum age in your
+          jurisdiction). We do not knowingly collect personal data from children. If you are a parent or guardian
+          and believe a child has provided personal data to us, please contact us using the details below.
+        </p>
+      </section>
+
+      <section id="gdpr-rights">
+        <h2>11. Your Rights (GDPR)</h2>
+        <p>
+          Under the GDPR you have, in particular, the right to access, rectify, erase, restrict processing,
+          data portability, and to object. You also have the right to lodge a complaint with a data protection
+          supervisory authority.
+        </p>
+        <ul>
+          <li>
+            <strong>Delete your account and game state:</strong> email us at
+            <a href="mailto:pascalnuescheler@gmail.com">pascalnuescheler@gmail.com</a> and we will delete your
+            account and game state from the servers.
+          </li>
+          <li>
+            <strong>Delete local data:</strong> clear the App's storage in Android settings or uninstall the App.
+          </li>
+        </ul>
+      </section>
+
+      <section id="updates">
+        <h2>12. Policy Updates</h2>
+        <p>
+          We may update this Privacy Policy when the App, legal requirements, or our practices change.
+          The “Last updated” date at the top of this page always reflects the current version.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>13. Contact</h2>
+        <p>
+          If you have questions about this Privacy Policy or privacy in Lock&amp;Loot:
+        </p>
+        <p>
+          Email: <a href="mailto:pascalnuescheler@gmail.com">pascalnuescheler@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        © <span id="year">2026</span> Lock&amp;Loot. All rights reserved.
+      </div>
+      <script>
+        // Keep the footer year current without affecting policy dates.
+        (function () {
+          var el = document.getElementById('year');
+          if (el) el.textContent = String(new Date().getFullYear());
+        })();
+      </script>
+    </footer>
+  </div>
+</body>
+</html>
