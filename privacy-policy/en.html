@@ -16,7 +16,7 @@
       <p class="lang-switch">🇩🇪 <a href="./index.html">Diese Erklärung auf Deutsch lesen</a></p>
       <div class="meta">
         <div><strong>Effective date:</strong> August 10, 2026</div>
-        <div><strong>Last updated:</strong> October 13, 2026</div>
+        <div><strong>Last updated:</strong> October 15, 2026</div>
       </div>
     </header>
 
@@ -137,6 +137,32 @@
           </li>
         </ul>
 
+        <p><strong>g) Notifications (Firebase Cloud Messaging)</strong></p>
+        <ul>
+          <li>
+            If you allow notifications, Firebase Cloud Messaging (FCM, a Google service) assigns your device a
+            <strong>device identifier (push token)</strong>. We store it in your game state so that the server
+            can tell you that you were attacked or that a friend needs help rebuilding after an attack.
+          </li>
+          <li>
+            Such a message contains only the necessary game facts: the player name of the attacker or friend,
+            the outcome of the battle, and the identifier of the game account it is meant for. The App builds
+            the displayed text on your device. To deliver the message, Google routes it through its servers;
+            Firebase Cloud Messaging is not limited to the EU region.
+          </li>
+          <li>
+            So that friends are not notified several times after an attack, we also store the time of the
+            last such notification in your game state.
+          </li>
+          <li>
+            The App calculates the “storage full” notification itself on your device, without any server.
+          </li>
+          <li>
+            If you turn notifications off in Android or in your profile (attacks and friends), the App removes
+            the push token from your game state. It is also removed when you delete your account.
+          </li>
+        </ul>
+
         <p>
           <strong>Legal basis:</strong> Processing is carried out to provide the game
           (Art. 6(1)(b) GDPR) and based on our legitimate interest in secure, cheat-free gameplay
@@ -176,6 +202,10 @@
           <li><strong>Battle reports:</strong> automatically deleted 30 days after the battle.</li>
           <li><strong>Transfer records:</strong> automatically deleted 31 days after the transaction.</li>
           <li>
+            <strong>Push token:</strong> stored for as long as you allow notifications and your account
+            exists; the server removes a token that has become invalid on its own.
+          </li>
+          <li>
             <strong>Feedback messages:</strong> stored until we have handled them. When you delete your account,
             the account identifier and player name are removed; the text is retained without any personal
             reference for the further development of the game.
@@ -199,7 +229,7 @@
           <li>The App contains <strong>no advertising SDKs</strong> and shows no ads.</li>
           <li>There are <strong>no analytics or tracking services</strong> built in (no Google Analytics, no Crashlytics, or similar). We keep the simple usage statistics from Section 4&nbsp;b ourselves on the game servers, without any third party.</li>
           <li>Your data is <strong>never sold</strong> and never shared for advertising purposes.</li>
-          <li>The only recipients of your data are the Google Firebase services listed above, acting as a technical service provider.</li>
+          <li>The only recipients of your data are the Google Firebase services listed above (including Firebase Cloud Messaging for notifications), acting as a technical service provider.</li>
         </ul>
       </section>
 
@@ -208,6 +238,8 @@
         <ul>
           <li><strong>Internet (INTERNET):</strong> connection to the game servers (Firebase) for account, game state, battles, and chat.</li>
           <li><strong>Usage Access (PACKAGE_USAGE_STATS):</strong> detecting screen on/off events for the game mechanic (see Section 5).</li>
+          <li><strong>Notifications (POST_NOTIFICATIONS):</strong> silent notifications about attacks, friends who need help, and full storehouses (see Section 4&nbsp;g). The App only asks after the practice battle; you can turn them off at any time in Android or in your profile.</li>
+          <li><strong>Push delivery (via Firebase Cloud Messaging, including briefly waking the device):</strong> so that a notification arrives even while your phone is locked.</li>
         </ul>
       </section>
 

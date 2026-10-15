@@ -16,7 +16,7 @@
       <p class="lang-switch">🇬🇧 <a href="./en.html">Read this policy in English</a></p>
       <div class="meta">
         <div><strong>Gültig ab:</strong> 10. August 2026</div>
-        <div><strong>Zuletzt aktualisiert:</strong> 13. Oktober 2026</div>
+        <div><strong>Zuletzt aktualisiert:</strong> 15. Oktober 2026</div>
       </div>
     </header>
 
@@ -142,6 +142,33 @@
           </li>
         </ul>
 
+        <p><strong>g) Benachrichtigungen (Firebase Cloud Messaging)</strong></p>
+        <ul>
+          <li>
+            Erlaubst du Benachrichtigungen, vergibt Firebase Cloud Messaging (FCM, ein Dienst von Google) deinem
+            Gerät eine <strong>Geräte-Kennung (Push-Token)</strong>. Wir speichern sie in deinem Spielstand, damit
+            der Server dir melden kann, dass du angegriffen wurdest oder dass ein Freund nach einem Angriff Hilfe
+            beim Wiederaufbau braucht.
+          </li>
+          <li>
+            Eine solche Nachricht enthält nur die nötigen Spielfakten: den Spielernamen des Angreifers bzw. des
+            Freundes, das Ergebnis des Kampfes und die Kennung des Spiel-Kontos, für das sie bestimmt ist. Den
+            angezeigten Text baut die App auf deinem Gerät. Für die Zustellung leitet Google die Nachricht über
+            seine Server weiter; Firebase Cloud Messaging ist dabei nicht auf die EU-Region beschränkt.
+          </li>
+          <li>
+            Damit Freunde nach einem Angriff nicht mehrfach benachrichtigt werden, speichern wir in deinem
+            Spielstand außerdem den Zeitpunkt der letzten solchen Meldung.
+          </li>
+          <li>
+            Die Meldung „Lager voll“ berechnet die App selbst auf deinem Gerät, ohne Server.
+          </li>
+          <li>
+            Schaltest du Benachrichtigungen in Android oder im Profil ab (Angriffe und Freunde), löscht die App
+            das Push-Token aus deinem Spielstand. Mit der Kontolöschung verschwindet es ebenfalls.
+          </li>
+        </ul>
+
         <p>
           <strong>Rechtsgrundlage:</strong> Die Verarbeitung erfolgt zur Bereitstellung des Spiels
           (Art. 6 Abs. 1 lit. b DSGVO) sowie auf Grundlage unseres berechtigten Interesses an einem sicheren,
@@ -181,6 +208,10 @@
           <li><strong>Kampfberichte:</strong> automatische Löschung 30 Tage nach dem Kampf.</li>
           <li><strong>Transfereinträge:</strong> automatische Löschung 31 Tage nach dem Vorgang.</li>
           <li>
+            <strong>Push-Token:</strong> gespeichert, solange du Benachrichtigungen erlaubst und dein Konto
+            besteht; ein ungültig gewordenes Token entfernt der Server selbst.
+          </li>
+          <li>
             <strong>Feedback-Nachrichten:</strong> gespeichert, bis wir sie bearbeitet haben. Bei einer
             Kontolöschung werden Konto-Kennung und Spielername entfernt; der Text bleibt ohne Personenbezug
             für die Weiterentwicklung des Spiels erhalten.
@@ -205,7 +236,7 @@
           <li>Die App enthält <strong>keine Werbe-SDKs</strong> und zeigt keine Werbung.</li>
           <li>Es sind <strong>keine Analyse- oder Tracking-Dienste</strong> eingebaut (kein Google Analytics, kein Crashlytics o.&nbsp;Ä.). Die einfache Nutzungsstatistik aus Abschnitt 4&nbsp;b führen wir selbst auf den Spielservern, ohne Drittanbieter.</li>
           <li>Deine Daten werden <strong>nicht verkauft</strong> und nicht zu Werbezwecken weitergegeben.</li>
-          <li>Einzige Empfänger der Daten sind die oben genannten Google-Firebase-Dienste als technischer Dienstleister.</li>
+          <li>Einzige Empfänger der Daten sind die oben genannten Google-Firebase-Dienste (einschließlich Firebase Cloud Messaging für Benachrichtigungen) als technischer Dienstleister.</li>
         </ul>
       </section>
 
@@ -214,6 +245,8 @@
         <ul>
           <li><strong>Internet (INTERNET):</strong> Verbindung zu den Spielservern (Firebase) für Konto, Spielstand, Kämpfe und Chat.</li>
           <li><strong>Nutzungszugriff (PACKAGE_USAGE_STATS):</strong> Erkennen von Bildschirm-an/aus-Ereignissen für die Spielmechanik (siehe Abschnitt 5).</li>
+          <li><strong>Benachrichtigungen (POST_NOTIFICATIONS):</strong> lautlose Meldungen über Angriffe, Freunde, die Hilfe brauchen, und volle Lager (siehe Abschnitt 4&nbsp;g). Die App fragt erst nach dem Übungskampf; du kannst sie jederzeit in Android oder im Profil abschalten.</li>
+          <li><strong>Push-Empfang (über Firebase Cloud Messaging, inkl. kurzem Wecken des Geräts):</strong> damit eine Benachrichtigung auch bei gesperrtem Handy ankommt.</li>
         </ul>
       </section>
 
